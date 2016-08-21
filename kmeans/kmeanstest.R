@@ -7,6 +7,8 @@
 library(datasets)
 
 
+if(!exists("mykmeans", mode="function")) source("kmeans.R")
+if(!exists("initcentroids", mode="function")) source("initialization.R")
 
 centers <- initCentroids(k_max=3, data=iris[,2:3])
 myCluster <- mykmeans(iris[,2:3], centers)

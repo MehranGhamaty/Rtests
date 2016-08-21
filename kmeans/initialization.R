@@ -1,7 +1,7 @@
 
 #uses kmeans plus plus method of initializing centroids
 #http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf
-initCentroids <- function(k_max, data)
+initcentroids <- function(k_max, data)
 {
   k = 1
   
