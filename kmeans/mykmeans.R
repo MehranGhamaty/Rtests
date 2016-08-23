@@ -3,7 +3,7 @@
 if(!exists("computeclosest", mode="function")) source("computeclosest.R")
 if(!exists("computecenters", mode="function")) source("computecenters.R")
 
-
+# isn't it beautiful?
 # Recusive implementation of Lloyd's algorithm 
 mykmeans <- function(data, centers, k)
 {
