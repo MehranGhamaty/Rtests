@@ -1,4 +1,12 @@
 
+Updates Step:
+![alt tag](https://mehranghamaty.github.io/Rtests/kmeans/animations/computeclosest.gif)
+Assignment Step:
+![alt tag](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecenttroids.gif)
+
+
+
+
 animations created with:
 
 imagemagick command:
