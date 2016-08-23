@@ -14,12 +14,7 @@ computecenters <- function(X, Y, k=NULL,livePlot=FALSE)
   
   for(i in 1:nrow(X))
   {
-    if(livePlot)
-    {
-      
-      
-    }
-    
+
     newcentroids[Y[i],] = newcentroids[Y[i],] + X[i,]
     newcentroids <- matrix(unlist(newcentroids), ncol = ncol(X), byrow = F)
     pointscount[Y[i]] = pointscount[Y[i]] + 1
