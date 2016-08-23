@@ -1,8 +1,10 @@
 
-Updates Step:
-![alt tag](https://mehranghamaty.github.io/Rtests/kmeans/animations/computeclosest.gif)
+Update Step:
+![Update Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computeclosest.gif)
+
+
 Assignment Step:
-![alt tag](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecenttroids.gif)
+![Assignment Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecentroids.gif)
 
 
 
