@@ -8,5 +8,5 @@ if(!exists("computecentroids", mode="function")) source("computecentroids.R", ch
 
 X = iris[2:3]
 centers = matrix(c(3, 3.5, 5, 1.5), nrow=2, ncol=2, byrow=FALSE)
-Y = computeclosest(X,centers,liveplot=T, saveanimation=TRUE)
-centers = computecentroids(X,Y,k=2,liveplot=TRUE, saveanimation=TRUE)
+Y = computeclosest(X,centers,liveplot=T, saveanimation=T)
+centers = computecentroids(X,Y,k=2,liveplot=F, saveanimation=F)

@@ -1,5 +1,8 @@
 centerColors = c('blue','red')
- 
+folder = "animations/"
+name = "computeclosest"
+extension = ".png" 
+
 #euc distance (no sqrt because our equation squares the distance)
 euc.dist <- function(x1, x2) sum((x1 - x2) ^ 2)
 
@@ -13,6 +16,12 @@ computeclosest <- function(X, centers,liveplot=FALSE,saveanimation=FALSE)
   {
     if(liveplot)
     {
+      
+      if(saveanimation)
+      {
+        print(paste(folder,name,getnumber(i),extension,sep=""))
+        png(filename=paste(folder,name,getnumber(i),extension,sep=""))
+      } 
       #plot all the points that have not currently been inspected
       plot(x= X[,1], y= X[,2])
       #plot previous points with their classication color
@@ -37,6 +46,7 @@ computeclosest <- function(X, centers,liveplot=FALSE,saveanimation=FALSE)
       points(x=centers[,1], y=centers[,2], col=centerColors, pch=6, cex=3)
       #target point color same as the closest center
       points(x=X[i,1], y=X[i,2], col=centerColors[closestCenter], pch=20, cex=2)
+      if(saveanimation) dev.off()
       Sys.sleep(0.1)
     }
     
