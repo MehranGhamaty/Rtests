@@ -1,9 +1,11 @@
 
 Update Step:
+
 ![Update Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computeclosest.gif)
 
 
 Assignment Step:
+
 ![Assignment Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecentroids.gif)
 
 
