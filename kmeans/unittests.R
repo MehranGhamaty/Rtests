@@ -1,14 +1,12 @@
-
-
+install.packages("rstudioapi")
 library(datasets)
 
-if(!exists("computeclosest", mode="function")) source("computeclosest.R")
-if(!exists("computecenters", mode="function")) source("computecenters.R")
-
+#do this to set wd to current one
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+if(!exists("computeclosest", mode="function")) source("computeclosest.R", chdir= T)
+if(!exists("computecentroids", mode="function")) source("computecentroids.R", chdir= T)
 
 X = iris[2:3]
-
-# make a matrix of test points 
 centers = matrix(c(3, 3.5, 5, 1.5), nrow=2, ncol=2, byrow=FALSE)
-Y = computeclosest(X,centers,livePlot=TRUE)
-centers = computecenters(X,Y,k=2,livePlot=TRUE)
+Y = computeclosest(X,centers,liveplot=T, saveanimation=TRUE)
+centers = computecentroids(X,Y,k=2,liveplot=TRUE, saveanimation=TRUE)
