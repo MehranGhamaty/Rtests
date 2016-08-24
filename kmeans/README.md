@@ -11,9 +11,8 @@ Assignment Step:
 
 
 
-animations created with:
-
-imagemagick command:
+animations created with imagemagick:
 
 convert -delay 10 -loop 0 computecentroids*.png animations/computecentroids.gif
+
 convert -delay 10 -loop 0 computeclosest*.png animations/computeclosest.gif

@@ -10,13 +10,15 @@ mykmeans <- function(data, centers, k)
   # Assignment Step
   Y <- computeclosest(data, centers)
   # Update Step
-  newcentroids <- computecenters(data,Y,k=5)
+  newcentroids <- computecenters(data, Y, k=k)
   # If they centroids match we return them otherwise try again with the new set of centroids\
-  if(newcentroids == centers)
+  print(newcentroids)
+  print(centers)
+  if(all(newcentroids == centers))
   {
     return(newcentroids)
   } else {
-    return(mykmeans(data, newcentroids)) 
+    return(mykmeans(data, newcentroids, k=k)) 
   }
 }
 
