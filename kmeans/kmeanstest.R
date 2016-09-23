@@ -7,18 +7,29 @@
 library(datasets)
 
 
-if(!exists("mykmeans", mode="function")) source("kmeans.R")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+if(!exists("recursivekmeans", mode="function")) source("mykmeans.R")
 if(!exists("initcentroids", mode="function")) source("initialization.R")
 
 centers <- initCentroids(k_max=2, data=iris[,2:3])
-myCluster <- mykmeans(iris[,2:3], centers, k=2)
-myCluster
 
+
+ptm <- proc.time()
+recursiveCluster <- recursivekmeans(iris[,2:3], centers, k=2)
+#recursivecluster
+proc.time() - ptm
+
+ptm <- proc.time()
+repeatCluster <- repeatkmeans(iris[,2:3], centers, k=2)
+#repeatcluster
+proc.time() - ptm
+
+ptm <- proc.time()
 irisCluster <- kmeans(iris[,2:3], centers)
-irisCluster$cluster
-irisCluster
+#irisCluster$centers
+proc.time() - ptm
 
-iris$Species
+#iris$Species
 
 #plot clusters
 plot(iris[,2:3], col = irisCluster$cluster)

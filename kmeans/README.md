@@ -9,8 +9,6 @@ Assignment Step:
 ![Assignment Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecentroids.gif)
 
 
-
-
 animations created with imagemagick:
 
 convert -delay 10 -loop 0 computecentroids*.png animations/computecentroids.gif
