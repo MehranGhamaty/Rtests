@@ -1,12 +1,12 @@
 
 Update Step:
 
-![Update Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computeclosest.gif)
+![Update Step](https://raw.githubusercontent.com/MehranGhamaty/RTests/master/kmeans/animations/computecentroids.gif)
 
 
 Assignment Step:
 
-![Assignment Step](https://mehranghamaty.github.io/Rtests/kmeans/animations/computecentroids.gif)
+![Assignment Step](https://raw.githubusercontent.com/MehranGhamaty/RTests/master/kmeans/animations/computecentroids.gif)
 
 
 animations created with imagemagick:
