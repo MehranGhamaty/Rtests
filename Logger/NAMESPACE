@@ -1,3 +1,0 @@
-useDynLib(Logger)
-exportPattern("^[[:alpha:]]+")
-importFrom(Rcpp, evalCpp)
