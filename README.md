@@ -1,3 +1,5 @@
+An implementation of K-Means that includes some tricks from a few papers.
+
 
 Update Step:
 
